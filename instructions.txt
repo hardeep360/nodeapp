@@ -1,0 +1,49 @@
+//Node
+
+///////////////////////////////
+// Create Pacakage.json file //
+//////////////////////////////
+--Commands--
+npm init 
+
+"Enter prompt info and add yes at the end"
+
+/////
+Steps in install local dependancy
+////
+$ npm i <Package name>
+or
+$ npm install <package name>
+
+$ npm install zone.js
+$ npm install express
+
+
+/////
+Install Global dependancy -> Install in system
+/////
+
+$ npm install -g <Package Name>
+$ npm install -g nodemon
+
+Global Installation Folder in system: /usr/local/lib/node_modules
+
+>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//Package.json -> in scripts add command 
+ "scripts" : [
+ "start" : "node app.js"  //and use following to start app -> $ npm start
+ "dev" : "node server.js" // $ npm run dev 
+ "hardy" : "node hardy.js" // $ npm run hardy 
+ ]
+$ npm start
+$ npm run dev 
+$ npm run hardy 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<
+nodemon is good global package for development. It automatically activate our changes and restart server and we don't need to restart manually after every change.
+
+$ nodemon server.js 
+
+or we can use it in package.json scripts paramter.
+"dev" : "nodemon server.js"
